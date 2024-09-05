@@ -1,0 +1,9 @@
+@domain = http://localhost:3000
+
+###
+
+GET {{domain}}/ola
+
+###
+
+GET {{domain}}/numeros
