@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import https from 'https';
 import { numeros } from './numeros.js';
 import { openDB } from './configDB.js';
 
@@ -22,6 +23,8 @@ app.get('/numeros/:numero', (req, res) => {
     res.send(numeros[numero - 1]);
 });
 
-app.listen(3000, () => {
+
+
+app.listen(3000, '0.0.0.0', () => {
   console.log('Server is running on http://localhost:3000');
 });

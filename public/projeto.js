@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/numeros')
+fetch('https://supreme-orbit-g4xq476w7jx7fpwp9-3000.app.github.dev/numeros')
 .then(response => response.json())
 .then(json => {
     let newjson = JSON.stringify(json);
