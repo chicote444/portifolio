@@ -1,4 +1,4 @@
-fetch('https://supreme-orbit-g4xq476w7jx7fpwp9-3000.app.github.dev/numeros')
+fetch('https://redesigned-carnival-69vg94w75g74fgqp-3000.app.github.dev/semana')
 .then(response => response.json())
 .then(json => {
     let newjson = JSON.stringify(json);
@@ -7,7 +7,7 @@ fetch('https://supreme-orbit-g4xq476w7jx7fpwp9-3000.app.github.dev/numeros')
     let x = document.querySelector('.numbers');
     console.log(x);
     for (let i = 0; i < newjson.length; i++) {
-        x.innerHTML += '<h1>' + newjson[i] + '</h1>'  + '<br>';
+        x.innerHTML += '<h1>' + newjson[i].materia + '</h1>'  + '<br>';
     }});
     
 
